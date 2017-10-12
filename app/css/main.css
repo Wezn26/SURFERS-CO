@@ -136,7 +136,7 @@ header label span {
 
 header nav.menu p {
   display: inline-block;
-  margin-right: 173px;
+  margin-right: 130px;
   font-weight: bold;
   font-size: 34px;
 }
@@ -156,7 +156,7 @@ header nav.menu ul li {
   margin-right: 25px;
 }
 
-header nav.menu ul li:last-child {
+header nav.menu ul li:nth-child(6) {
   margin-right: 0;
 }
 
@@ -171,4 +171,47 @@ header nav.menu ul li a {
 
 header nav.menu ul li a:hover {
   background: #00b0ff;
+}
+
+header nav.menu ul div.social {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 4em;
+}
+
+header nav.menu ul div.social a {
+  display: block;
+  width: 37px;
+  height: 37px;
+  margin-right: 10px;
+  background: url(../img/social-icons.png) no-repeat 0 0;
+}
+
+header nav.menu ul div.social a:last-child {
+  margin-right: 0;
+}
+
+header nav.menu ul div.social a.fb:hover {
+  background-position: -109px 0;
+}
+
+header nav.menu ul div.social a.in {
+  background-position: -35px 0;
+}
+
+header nav.menu ul div.social a.in:hover {
+  background-position: -148px 0;
+}
+
+header nav.menu ul div.social a.ml {
+  background-position: -72px 0;
+}
+
+header nav.menu ul div.social a.ml:hover {
+  background-position: -185px 0;
 }
