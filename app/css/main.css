@@ -16,7 +16,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font: 14px sans-serif;
   vertical-align: baseline;
   /*max-width: 100%;*/
 }
@@ -61,7 +61,6 @@ html {
 
 body {
   height: 100%;
-  font: 14px/18px 'Times New Roman', Times, sans-serif;
   background-color: #fff;
 }
 
@@ -109,11 +108,37 @@ body {
   max-width: 1170px;
 }
 
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("app/fonts/Montserrat-Bold.eot");
+  src: url("app/fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("app/fonts/Montserrat-Bold.woff") format("woff"), url("app/fonts/Montserrat-Bold.ttf") format("truetype"), url("app/fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("app/fonts/Montserrat-Regular.eot");
+  src: url("app/fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("app/fonts/Montserrat-Regular.woff") format("woff"), url("app/fonts/Montserrat-Regular.ttf") format("truetype"), url("app/fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Italic';
+  src: url("app/fonts/PlayfairDisplay-Italic.eot");
+  src: url("app/fonts/PlayfairDisplay-Italic.eot?#iefix") format("embedded-opentype"), url("app/fonts/PlayfairDisplay-Italic.woff") format("woff"), url("app/fonts/PlayfairDisplay-Italic.ttf") format("truetype"), url("app/fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic") format("svg");
+}
+
+@font-face {
+  font-family: 'RalewayRegular';
+  src: url("app/fonts/RalewayRegular.eot");
+  src: url("app/fonts/RalewayRegular.eot?#iefix") format("embedded-opentype"), url("app/fonts/RalewayRegular.woff") format("woff"), url("app/fonts/RalewayRegular.ttf") format("truetype"), url("app/fonts/RalewayRegular.svg#RalewayRegular") format("svg");
+}
+
 header {
   height: 100%;
   width: 100%;
   padding-top: 34px;
   background: url(../img/bg-header.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 
 header input#btn-menu {
@@ -121,10 +146,11 @@ header input#btn-menu {
 }
 
 header label {
-  display: block;
+  display: none;
   width: 30px;
   height: 30px;
-  padding: 16px 14px 6px 15px;
+  padding: 5px 14px 13px 15px;
+  background: #00b0ff;
   border: 3px solid #fff;
 }
 
@@ -134,11 +160,15 @@ header label span {
   cursor: pointer;
 }
 
+header p.menu {
+  display: none;
+}
+
 header nav.menu p {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 34px;
   display: inline-block;
   margin-right: 130px;
-  font-weight: bold;
-  font-size: 34px;
 }
 
 header nav.menu ul {
@@ -162,6 +192,7 @@ header nav.menu ul li:nth-child(6) {
 
 header nav.menu ul li a {
   display: block;
+  font-family: "Montserrat-Regular", sans-serif;
   padding: 7px 10px;
   text-transform: uppercase;
   -webkit-transition: background 0.5s ease;
@@ -214,4 +245,70 @@ header nav.menu ul div.social a.ml {
 
 header nav.menu ul div.social a.ml:hover {
   background-position: -185px 0;
+}
+
+@media screen and (max-width: 894px) {
+  header {
+    padding: 0;
+  }
+  section.head {
+    background: #00b0ff;
+  }
+  header label {
+    display: block;
+  }
+  header nav.menu ul li {
+    margin-left: 0;
+    text-align: center;
+  }
+  header p.menu {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+  }
+  nav.menu {
+    position: absolute;
+    width: 70%;
+    margin-left: -70%;
+    background: rgba(0, 176, 255, 0.4);
+    -webkit-transition: margin-left 0.5s;
+    -o-transition: margin-left 0.5s;
+    transition: margin-left 0.5s;
+  }
+  header nav.menu p {
+    display: block;
+    margin-right: 0;
+    text-align: center;
+  }
+  header nav.menu ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav.menu ul div.social {
+    margin-right: 1em;
+    margin-left: 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  input#btn-menu:checked ~ nav.menu {
+    margin: 0;
+  }
 }

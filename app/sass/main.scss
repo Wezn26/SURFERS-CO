@@ -16,7 +16,7 @@ margin: 0;
 padding: 0;
 border: 0;
 font-size: 100%;
-font: inherit;
+font: 14px sans-serif;
 vertical-align: baseline;
 /*max-width: 100%;*/
 }
@@ -54,7 +54,6 @@ html {height: 100%;}
 
 body {
   height: 100%;
-  font: 14px/18px 'Times New Roman', Times, sans-serif;
   background-color: #fff;
 }
 
@@ -89,8 +88,11 @@ display: table;
 // IMPORT BEGINNER
 @import "app/import/variables";
 @import "app/import/mixin";
+@import "app/import/fonts";
 // IMPORT END
 
+// FONTS BEGINNER
+// FONTS END
 
                    // HEADER BEGINNER
 header {
@@ -98,12 +100,15 @@ header {
   width: 100%;
   padding-top: 34px;
   background: url(../img/bg-header.jpg) no-repeat center center;
+  background-size: cover;
+
   input#btn-menu {display: none;}
   label {
-  display: block;
+  display: none;
   width: 30px;
   height: 30px;
-  padding: 16px 14px 6px 15px;
+  padding: 5px 14px 13px 15px;
+  background: $nav;
   border: 3px solid $w;
   & span {
     font-size: 30px;
@@ -112,12 +117,16 @@ header {
   }
   }
 
+  p.menu {
+    display: none;
+  }
+
   nav.menu {
     p {
+      font-family: $mb, sans-serif;
+      font-size: 34px;
       display: inline-block;
       margin-right: 130px;
-      font-weight: bold;
-      font-size: 34px;
     }
     ul {
       margin-left: 30px;
@@ -131,6 +140,7 @@ header {
         &:nth-child(6) {margin-right: 0;}
         a {
           display: block;
+          font-family: $mr, sans-serif;
           padding: 7px 10px;
           text-transform: uppercase;
           transition: background 0.5s ease;
@@ -163,3 +173,72 @@ header {
 }
 
                  // HEADER END
+// MEDIA SCREENS BEGINNER
+@media screen and (max-width: 894px) {
+  header {
+    padding: 0;
+  }
+
+  section.head {
+    background: $nav;
+  }
+
+  header label {
+    display: block;
+  }
+  header nav.menu ul li {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  header p.menu {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+ nav.menu {
+    position: absolute;
+    width: 70%;
+    // height: 100%;
+    margin-left: -70%;
+    background: $navtr;
+    -webkit-transition: margin-left 0.5s;
+    -o-transition: margin-left 0.5s;
+    transition: margin-left 0.5s;
+  }
+
+header nav.menu p {
+    display: block;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  header nav.menu ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header nav.menu ul div.social {
+    margin-right: 1em;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+ input#btn-menu:checked ~ nav.menu {
+    margin: 0;
+  }
+
+}
+
+
+// MEDIA SCREENS END
