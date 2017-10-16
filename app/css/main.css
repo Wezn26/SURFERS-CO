@@ -145,7 +145,7 @@ header input#btn-menu {
   display: none;
 }
 
-header label {
+header label.lbl-menu {
   display: none;
   width: 30px;
   height: 30px;
@@ -154,7 +154,7 @@ header label {
   border: 3px solid #fff;
 }
 
-header label span {
+header label.lbl-menu span {
   font-size: 30px;
   color: #fff;
   cursor: pointer;
@@ -264,10 +264,77 @@ header section.ride-wave h2 {
   font-size: 24px;
 }
 
-header section.buy-now {
-  display: inline-block;
-  max-width: 1070px;
-  background: #fff;
+header section.boards {
+  display: block;
+  max-width: 1030px;
+  height: 603px;
+  margin: 0 auto;
+  background: url(../img/Corner.png) no-repeat 0 0 #fff;
+}
+
+header section.boards .left-boards {
+  position: relative;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 54%;
+  height: 603px;
+}
+
+header section.boards .left-boards ul li input {
+  display: none;
+}
+
+header section.boards .left-boards ul li input#a1:checked ~ img {
+  display: block;
+}
+
+header section.boards .left-boards ul li input#a1:checked + label {
+  outline: 3px solid #00b0ff;
+}
+
+header section.boards .left-boards ul li label {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  outline: 1px solid #cccccc;
+  background: url(../img/little-img.png) no-repeat 0 0;
+}
+
+header section.boards .left-boards ul li label.lbl-img2 {
+  background-position: -68px 0;
+}
+
+header section.boards .left-boards ul li label.lbl-img3 {
+  background-position: -140px 0;
+}
+
+header section.boards .left-boards ul li label.lbl-img4 {
+  background-position: -210px 0;
+}
+
+header section.boards .left-boards ul li img {
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  display: none;
+  width: 345px;
+  height: 470px;
+  background: url(../img/boards-img.png) no-repeat 0 0;
 }
 
 @media screen and (max-width: 894px) {
@@ -277,7 +344,7 @@ header section.buy-now {
   section.head {
     background: #00b0ff;
   }
-  header label {
+  header label.lbl-menu {
     display: block;
   }
   header nav.menu ul li {

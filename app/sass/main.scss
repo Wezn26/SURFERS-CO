@@ -103,7 +103,7 @@ header {
   background-size: cover;
 
   input#btn-menu {display: none;}
-  label {
+  label.lbl-menu {
   display: none;
   width: 30px;
   height: 30px;
@@ -170,6 +170,7 @@ header {
       }
     }
   }
+
   section.ride-wave {
     display: block;
     margin-top: 148px;
@@ -184,11 +185,56 @@ header {
       font-size: 24px;
     }
   }
-  section.buy-now {
-    display: inline-block;
-    max-width: 1070px;
-    background: $w;
-  }
+
+ section.boards {
+   display: block;
+   max-width: 1030px;
+   height: 603px;
+   margin: 0 auto;
+   background: url(../img/Corner.png) no-repeat 0 0 $w;
+ .left-boards {
+   position: relative;
+   display: -webkit-inline-flex;
+   display: -moz-inline-flex;
+   display: -ms-inline-flex;
+   display: -o-inline-flex;
+   display: inline-flex;
+   justify-content: flex-end;
+   align-items: center;
+   width: 54%;
+   height: 603px;
+   ul{
+     li{
+       input {display: none;}
+       input#a1:checked ~ img {display: block;}
+       input#a1:checked + label {outline: 3px solid $nav}
+       label {
+         display: block;
+         width: 60px;
+         height: 60px;
+         margin-bottom: 3px;
+         cursor: pointer;
+         outline: 1px solid $bd;
+         background: url(../img/little-img.png) no-repeat 0 0;
+         &.lbl-img2 {background-position: -68px 0;}
+         &.lbl-img3 {background-position: -140px 0;}
+         &.lbl-img4 {background-position: -210px 0;}
+       }
+
+       img {
+         position: absolute;
+         top: 80px;
+         left: 70px;
+         display: none;
+         width: 345px;
+         height: 470px;
+         background: url(../img/boards-img.png) no-repeat 0 0;
+       }
+     }
+   }
+ }
+ }
+
 }
 
                  // HEADER END
@@ -202,7 +248,7 @@ header {
     background: $nav;
   }
 
-  header label {
+  header label.lbl-menu {
     display: block;
   }
   header nav.menu ul li {
