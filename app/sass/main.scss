@@ -170,6 +170,25 @@ header {
       }
     }
   }
+  section.ride-wave {
+    display: block;
+    margin-top: 148px;
+    text-align: center;
+    h1 {
+      font-family: $plf;
+      font-size: 50px;
+    }
+    h2 {
+      margin-top: 13px;
+      font-family: $plf, sans-serif;
+      font-size: 24px;
+    }
+  }
+  section.buy-now {
+    display: inline-block;
+    max-width: 1070px;
+    background: $w;
+  }
 }
 
                  // HEADER END

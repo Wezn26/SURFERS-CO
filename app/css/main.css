@@ -247,6 +247,29 @@ header nav.menu ul div.social a.ml:hover {
   background-position: -185px 0;
 }
 
+header section.ride-wave {
+  display: block;
+  margin-top: 148px;
+  text-align: center;
+}
+
+header section.ride-wave h1 {
+  font-family: "PlayfairDisplay-Italic";
+  font-size: 50px;
+}
+
+header section.ride-wave h2 {
+  margin-top: 13px;
+  font-family: "PlayfairDisplay-Italic", sans-serif;
+  font-size: 24px;
+}
+
+header section.buy-now {
+  display: inline-block;
+  max-width: 1070px;
+  background: #fff;
+}
+
 @media screen and (max-width: 894px) {
   header {
     padding: 0;
