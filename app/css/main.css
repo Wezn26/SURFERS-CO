@@ -289,7 +289,7 @@ header section.boards .left-boards {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 54%;
+  width: 49%;
   height: 603px;
 }
 
@@ -301,7 +301,19 @@ header section.boards .left-boards ul li input#a1:checked ~ img {
   display: block;
 }
 
-header section.boards .left-boards ul li input#a1:checked + label {
+header section.boards .left-boards ul li input#a2:checked ~ img {
+  display: block;
+}
+
+header section.boards .left-boards ul li input#a3:checked ~ img {
+  display: block;
+}
+
+header section.boards .left-boards ul li input#a4:checked ~ img {
+  display: block;
+}
+
+header section.boards .left-boards ul li input:checked + label {
   outline: 3px solid #00b0ff;
 }
 
@@ -335,6 +347,18 @@ header section.boards .left-boards ul li img {
   width: 345px;
   height: 470px;
   background: url(../img/boards-img.png) no-repeat 0 0;
+}
+
+header section.boards .left-boards ul li img.img2 {
+  background-position: -336px 0;
+}
+
+header section.boards .left-boards ul li img.img3 {
+  background-position: -672px 0;
+}
+
+header section.boards .left-boards ul li img.img4 {
+  background-position: -1008px 0;
 }
 
 @media screen and (max-width: 894px) {

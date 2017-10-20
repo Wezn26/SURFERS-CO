@@ -201,13 +201,16 @@ header {
    display: inline-flex;
    justify-content: flex-end;
    align-items: center;
-   width: 54%;
+   width: 49%;
    height: 603px;
    ul{
      li{
        input {display: none;}
        input#a1:checked ~ img {display: block;}
-       input#a1:checked + label {outline: 3px solid $nav}
+       input#a2:checked ~ img {display: block;}
+       input#a3:checked ~ img {display: block;}
+       input#a4:checked ~ img {display: block;}
+       input:checked + label {outline: 3px solid $nav}
        label {
          display: block;
          width: 60px;
@@ -229,6 +232,9 @@ header {
          width: 345px;
          height: 470px;
          background: url(../img/boards-img.png) no-repeat 0 0;
+         &.img2 {background-position: -336px 0;}
+         &.img3 {background-position: -672px 0;}
+         &.img4 {background-position: -1008px 0;}
        }
      }
    }
