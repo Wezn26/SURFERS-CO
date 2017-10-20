@@ -24,3 +24,21 @@
     a3.checked = false;
   };
 })();
+
+(function () {
+  var descr = document.getElementById('descr'),
+      featrs = document.getElementById('featrs'),
+      dims = document.getElementById('dims');
+  descr.onclick = function () {
+    featrs.checked = false;
+    dims.checked = false;
+  };
+  featrs.onclick = function () {
+    descr.checked = false;
+    dims.checked = false;
+  };
+  dims.onclick = function () {
+    featrs.checked = false;
+    descr.checked = false;
+  };
+})();

@@ -96,7 +96,7 @@ display: table;
 
                    // HEADER BEGINNER
 header {
-  height: 100%;
+  height: 155%;
   width: 100%;
   padding-top: 34px;
   background: url(../img/bg-header.jpg) no-repeat center center;
@@ -173,7 +173,7 @@ header {
 
   section.ride-wave {
     display: block;
-    margin-top: 148px;
+    margin: 148px 0;
     text-align: center;
     h1 {
       font-family: $plf;
@@ -192,6 +192,7 @@ header {
    height: 603px;
    margin: 0 auto;
    background: url(../img/Corner.png) no-repeat 0 0 $w;
+   box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
  .left-boards {
    position: relative;
    display: -webkit-inline-flex;
@@ -238,6 +239,83 @@ header {
        }
      }
    }
+ }
+ .right-boards {
+   position: relative;
+   display: inline-block;
+   width: 49%;
+   height: 603px;
+   padding-top: 47px;
+   float: right;
+   background: url(../img/Boards.png) no-repeat 103% 0;
+ h3 {
+   font: 20px $mb, sans-serif;
+ }
+  span.raiting {
+    display: block;
+    margin: 17px 0 43px 0;
+    cursor: pointer;
+  }
+  article.description {
+    height: 220px;
+    ul {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      width: 72%;
+      border-bottom: 1px solid $ul;
+    li {
+      margin-right: 43px;
+      &:last-child {margin-right: 0;}
+      input {display: none;}
+      input#descr:checked ~ p {display: block;}
+      input#featrs:checked ~ p {display: block;}
+      input#dims:checked ~ p {display: block;}
+      input:checked + label {border-bottom: 2px solid $nav;}
+      label {
+        display: block;
+        font: bold 14px $rr, sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    p {
+      position: absolute;
+      display: none;
+      top: 32%;
+      left: 0;
+      width: 397px;
+      font: 16px $rr, sans-serif;
+    }
+    }
+    }
+  }
+
+  article.price {
+    display: block;
+  span {
+    margin-right: 50px;
+    font: bold 24px $rr, sans-serif;
+  }
+  button {
+    padding: 17px 31px;
+    background: $nav;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $w;
+    border: none;
+    cursor: pointer;
+  }
+  }
+
+  a.view {
+    display: block;
+    margin-top: 51px;
+    text-decoration: underline;
+    font: 16px $mr, sans-serif;
+    color: $nav;
+  }
  }
  }
 

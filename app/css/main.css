@@ -133,7 +133,7 @@ body {
 }
 
 header {
-  height: 100%;
+  height: 155%;
   width: 100%;
   padding-top: 34px;
   background: url(../img/bg-header.jpg) no-repeat center center;
@@ -249,7 +249,7 @@ header nav.menu ul div.social a.ml:hover {
 
 header section.ride-wave {
   display: block;
-  margin-top: 148px;
+  margin: 148px 0;
   text-align: center;
 }
 
@@ -270,6 +270,8 @@ header section.boards {
   height: 603px;
   margin: 0 auto;
   background: url(../img/Corner.png) no-repeat 0 0 #fff;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 header section.boards .left-boards {
@@ -359,6 +361,113 @@ header section.boards .left-boards ul li img.img3 {
 
 header section.boards .left-boards ul li img.img4 {
   background-position: -1008px 0;
+}
+
+header section.boards .right-boards {
+  position: relative;
+  display: inline-block;
+  width: 49%;
+  height: 603px;
+  padding-top: 47px;
+  float: right;
+  background: url(../img/Boards.png) no-repeat 103% 0;
+}
+
+header section.boards .right-boards h3 {
+  font: 20px "Montserrat-Bold", sans-serif;
+}
+
+header section.boards .right-boards span.raiting {
+  display: block;
+  margin: 17px 0 43px 0;
+  cursor: pointer;
+}
+
+header section.boards .right-boards article.description {
+  height: 220px;
+}
+
+header section.boards .right-boards article.description ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 72%;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+header section.boards .right-boards article.description ul li {
+  margin-right: 43px;
+}
+
+header section.boards .right-boards article.description ul li:last-child {
+  margin-right: 0;
+}
+
+header section.boards .right-boards article.description ul li input {
+  display: none;
+}
+
+header section.boards .right-boards article.description ul li input#descr:checked ~ p {
+  display: block;
+}
+
+header section.boards .right-boards article.description ul li input#featrs:checked ~ p {
+  display: block;
+}
+
+header section.boards .right-boards article.description ul li input#dims:checked ~ p {
+  display: block;
+}
+
+header section.boards .right-boards article.description ul li input:checked + label {
+  border-bottom: 2px solid #00b0ff;
+}
+
+header section.boards .right-boards article.description ul li label {
+  display: block;
+  font: bold 14px "RalewayRegular", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header section.boards .right-boards article.description ul li p {
+  position: absolute;
+  display: none;
+  top: 32%;
+  left: 0;
+  width: 397px;
+  font: 16px "RalewayRegular", sans-serif;
+}
+
+header section.boards .right-boards article.price {
+  display: block;
+}
+
+header section.boards .right-boards article.price span {
+  margin-right: 50px;
+  font: bold 24px "RalewayRegular", sans-serif;
+}
+
+header section.boards .right-boards article.price button {
+  padding: 17px 31px;
+  background: #00b0ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+header section.boards .right-boards a.view {
+  display: block;
+  margin-top: 51px;
+  text-decoration: underline;
+  font: 16px "Montserrat-Regular", sans-serif;
+  color: #00b0ff;
 }
 
 @media screen and (max-width: 894px) {
