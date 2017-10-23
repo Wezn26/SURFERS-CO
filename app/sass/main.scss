@@ -99,6 +99,7 @@ header {
   height: 155%;
   width: 100%;
   padding-top: 34px;
+  padding-bottom: 178px;
   background: url(../img/bg-header.jpg) no-repeat center center;
   background-size: cover;
 
@@ -186,6 +187,59 @@ header {
     }
   }
 
+section.slideshow-container {
+  max-width: 1030px;
+  position: relative;
+  margin: 0 auto;
+  .mySlides {
+      display: none;
+  }
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 11%;
+  right: 0;
+  width: auto;
+  // margin-top: -22px;
+  padding: 10px;
+  background: $yel;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: -3%;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: $nav;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.numbertext {
+  position: absolute;
+  top: 18%;
+  right: 0;
+  padding: 8px 12px;
+  color: $w;
+  background: #000;
+}
  section.boards {
    display: block;
    max-width: 1030px;
@@ -211,6 +265,21 @@ header {
        input#a2:checked ~ img {display: block;}
        input#a3:checked ~ img {display: block;}
        input#a4:checked ~ img {display: block;}
+
+       input#b1:checked ~ img {display: block;}
+       input#b2:checked ~ img {display: block;}
+       input#b3:checked ~ img {display: block;}
+       input#b4:checked ~ img {display: block;}
+
+       input#c1:checked ~ img {display: block;}
+       input#c2:checked ~ img {display: block;}
+       input#c3:checked ~ img {display: block;}
+       input#c4:checked ~ img {display: block;}
+
+       input#d1:checked ~ img {display: block;}
+       input#d2:checked ~ img {display: block;}
+       input#d3:checked ~ img {display: block;}
+       input#d4:checked ~ img {display: block;}
        input:checked + label {outline: 3px solid $nav}
        label {
          display: block;
@@ -244,7 +313,7 @@ header {
    position: relative;
    display: inline-block;
    width: 49%;
-   height: 603px;
+   height: 540px;
    padding-top: 47px;
    float: right;
    background: url(../img/Boards.png) no-repeat 103% 0;
@@ -273,6 +342,18 @@ header {
       input#descr:checked ~ p {display: block;}
       input#featrs:checked ~ p {display: block;}
       input#dims:checked ~ p {display: block;}
+
+      input#descr1:checked ~ p {display: block;}
+      input#featrs1:checked ~ p {display: block;}
+      input#dims1:checked ~ p {display: block;}
+
+      input#descr2:checked ~ p {display: block;}
+      input#featrs2:checked ~ p {display: block;}
+      input#dims2:checked ~ p {display: block;}
+
+      input#descr3:checked ~ p {display: block;}
+      input#featrs3:checked ~ p {display: block;}
+      input#dims3:checked ~ p {display: block;}
       input:checked + label {border-bottom: 2px solid $nav;}
       label {
         display: block;
@@ -283,7 +364,7 @@ header {
     p {
       position: absolute;
       display: none;
-      top: 32%;
+      top: 36%;
       left: 0;
       width: 397px;
       font: 16px $rr, sans-serif;
@@ -318,10 +399,23 @@ header {
   }
  }
  }
-
+}
 }
 
                  // HEADER END
+
+          //AFTER HEADER BEGINNER
+section.after-header {
+
+  p {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font: bold 13em $mb, sans-serif;
+    color: $abs;
+  }
+}
+          //AFTER HEADER END
 // MEDIA SCREENS BEGINNER
 @media screen and (max-width: 894px) {
   header {

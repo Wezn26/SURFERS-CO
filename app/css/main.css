@@ -136,6 +136,7 @@ header {
   height: 155%;
   width: 100%;
   padding-top: 34px;
+  padding-bottom: 178px;
   background: url(../img/bg-header.jpg) no-repeat center center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -264,7 +265,79 @@ header section.ride-wave h2 {
   font-size: 24px;
 }
 
-header section.boards {
+header section.slideshow-container {
+  max-width: 1030px;
+  position: relative;
+  margin: 0 auto;
+}
+
+header section.slideshow-container .mySlides {
+  display: none;
+}
+
+header section.slideshow-container .prev, header section.slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 11%;
+  right: 0;
+  width: auto;
+  padding: 10px;
+  background: #f2d800;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease;
+  -webkit-border-radius: 0 3px 3px 0;
+          border-radius: 0 3px 3px 0;
+}
+
+header section.slideshow-container .next {
+  right: -3%;
+  -webkit-border-radius: 3px 0 0 3px;
+          border-radius: 3px 0 0 3px;
+}
+
+header section.slideshow-container .prev:hover, header section.slideshow-container .next:hover {
+  background-color: #00b0ff;
+}
+
+header section.slideshow-container .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+header section.slideshow-container .numbertext {
+  position: absolute;
+  top: 18%;
+  right: 0;
+  padding: 8px 12px;
+  color: #fff;
+  background: #000;
+}
+
+header section.slideshow-container section.boards {
   display: block;
   max-width: 1030px;
   height: 603px;
@@ -274,7 +347,7 @@ header section.boards {
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-header section.boards .left-boards {
+header section.slideshow-container section.boards .left-boards {
   position: relative;
   display: -webkit-inline-flex;
   display: -moz-inline-flex;
@@ -295,31 +368,79 @@ header section.boards .left-boards {
   height: 603px;
 }
 
-header section.boards .left-boards ul li input {
+header section.slideshow-container section.boards .left-boards ul li input {
   display: none;
 }
 
-header section.boards .left-boards ul li input#a1:checked ~ img {
+header section.slideshow-container section.boards .left-boards ul li input#a1:checked ~ img {
   display: block;
 }
 
-header section.boards .left-boards ul li input#a2:checked ~ img {
+header section.slideshow-container section.boards .left-boards ul li input#a2:checked ~ img {
   display: block;
 }
 
-header section.boards .left-boards ul li input#a3:checked ~ img {
+header section.slideshow-container section.boards .left-boards ul li input#a3:checked ~ img {
   display: block;
 }
 
-header section.boards .left-boards ul li input#a4:checked ~ img {
+header section.slideshow-container section.boards .left-boards ul li input#a4:checked ~ img {
   display: block;
 }
 
-header section.boards .left-boards ul li input:checked + label {
+header section.slideshow-container section.boards .left-boards ul li input#b1:checked ~ img {
+  display: block;
+}
+
+header section.slideshow-container section.boards .left-boards ul li input#b2:checked ~ img {
+  display: block;
+}
+
+header section.slideshow-container section.boards .left-boards ul li input#b3:checked ~ img {
+  display: block;
+}
+
+header section.slideshow-container section.boards .left-boards ul li input#b4:checked ~ img {
+  display: block;
+}
+
+header section.slideshow-container section.boards .left-boards ul li input#c1:checked ~ img {
+  display: block;
+}
+
+header section.slideshow-container section.boards .left-boards ul li input#c2:checked ~ img {
+  display: block;
+}
+
+header section.slideshow-container section.boards .left-boards ul li input#c3:checked ~ img {
+  display: block;
+}
+
+header section.slideshow-container section.boards .left-boards ul li input#c4:checked ~ img {
+  display: block;
+}
+
+header section.slideshow-container section.boards .left-boards ul li input#d1:checked ~ img {
+  display: block;
+}
+
+header section.slideshow-container section.boards .left-boards ul li input#d2:checked ~ img {
+  display: block;
+}
+
+header section.slideshow-container section.boards .left-boards ul li input#d3:checked ~ img {
+  display: block;
+}
+
+header section.slideshow-container section.boards .left-boards ul li input#d4:checked ~ img {
+  display: block;
+}
+
+header section.slideshow-container section.boards .left-boards ul li input:checked + label {
   outline: 3px solid #00b0ff;
 }
 
-header section.boards .left-boards ul li label {
+header section.slideshow-container section.boards .left-boards ul li label {
   display: block;
   width: 60px;
   height: 60px;
@@ -329,19 +450,19 @@ header section.boards .left-boards ul li label {
   background: url(../img/little-img.png) no-repeat 0 0;
 }
 
-header section.boards .left-boards ul li label.lbl-img2 {
+header section.slideshow-container section.boards .left-boards ul li label.lbl-img2 {
   background-position: -68px 0;
 }
 
-header section.boards .left-boards ul li label.lbl-img3 {
+header section.slideshow-container section.boards .left-boards ul li label.lbl-img3 {
   background-position: -140px 0;
 }
 
-header section.boards .left-boards ul li label.lbl-img4 {
+header section.slideshow-container section.boards .left-boards ul li label.lbl-img4 {
   background-position: -210px 0;
 }
 
-header section.boards .left-boards ul li img {
+header section.slideshow-container section.boards .left-boards ul li img {
   position: absolute;
   top: 80px;
   left: 70px;
@@ -351,43 +472,43 @@ header section.boards .left-boards ul li img {
   background: url(../img/boards-img.png) no-repeat 0 0;
 }
 
-header section.boards .left-boards ul li img.img2 {
+header section.slideshow-container section.boards .left-boards ul li img.img2 {
   background-position: -336px 0;
 }
 
-header section.boards .left-boards ul li img.img3 {
+header section.slideshow-container section.boards .left-boards ul li img.img3 {
   background-position: -672px 0;
 }
 
-header section.boards .left-boards ul li img.img4 {
+header section.slideshow-container section.boards .left-boards ul li img.img4 {
   background-position: -1008px 0;
 }
 
-header section.boards .right-boards {
+header section.slideshow-container section.boards .right-boards {
   position: relative;
   display: inline-block;
   width: 49%;
-  height: 603px;
+  height: 540px;
   padding-top: 47px;
   float: right;
   background: url(../img/Boards.png) no-repeat 103% 0;
 }
 
-header section.boards .right-boards h3 {
+header section.slideshow-container section.boards .right-boards h3 {
   font: 20px "Montserrat-Bold", sans-serif;
 }
 
-header section.boards .right-boards span.raiting {
+header section.slideshow-container section.boards .right-boards span.raiting {
   display: block;
   margin: 17px 0 43px 0;
   cursor: pointer;
 }
 
-header section.boards .right-boards article.description {
+header section.slideshow-container section.boards .right-boards article.description {
   height: 220px;
 }
 
-header section.boards .right-boards article.description ul {
+header section.slideshow-container section.boards .right-boards article.description ul {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -399,60 +520,96 @@ header section.boards .right-boards article.description ul {
   border-bottom: 1px solid #d9d9d9;
 }
 
-header section.boards .right-boards article.description ul li {
+header section.slideshow-container section.boards .right-boards article.description ul li {
   margin-right: 43px;
 }
 
-header section.boards .right-boards article.description ul li:last-child {
+header section.slideshow-container section.boards .right-boards article.description ul li:last-child {
   margin-right: 0;
 }
 
-header section.boards .right-boards article.description ul li input {
+header section.slideshow-container section.boards .right-boards article.description ul li input {
   display: none;
 }
 
-header section.boards .right-boards article.description ul li input#descr:checked ~ p {
+header section.slideshow-container section.boards .right-boards article.description ul li input#descr:checked ~ p {
   display: block;
 }
 
-header section.boards .right-boards article.description ul li input#featrs:checked ~ p {
+header section.slideshow-container section.boards .right-boards article.description ul li input#featrs:checked ~ p {
   display: block;
 }
 
-header section.boards .right-boards article.description ul li input#dims:checked ~ p {
+header section.slideshow-container section.boards .right-boards article.description ul li input#dims:checked ~ p {
   display: block;
 }
 
-header section.boards .right-boards article.description ul li input:checked + label {
+header section.slideshow-container section.boards .right-boards article.description ul li input#descr1:checked ~ p {
+  display: block;
+}
+
+header section.slideshow-container section.boards .right-boards article.description ul li input#featrs1:checked ~ p {
+  display: block;
+}
+
+header section.slideshow-container section.boards .right-boards article.description ul li input#dims1:checked ~ p {
+  display: block;
+}
+
+header section.slideshow-container section.boards .right-boards article.description ul li input#descr2:checked ~ p {
+  display: block;
+}
+
+header section.slideshow-container section.boards .right-boards article.description ul li input#featrs2:checked ~ p {
+  display: block;
+}
+
+header section.slideshow-container section.boards .right-boards article.description ul li input#dims2:checked ~ p {
+  display: block;
+}
+
+header section.slideshow-container section.boards .right-boards article.description ul li input#descr3:checked ~ p {
+  display: block;
+}
+
+header section.slideshow-container section.boards .right-boards article.description ul li input#featrs3:checked ~ p {
+  display: block;
+}
+
+header section.slideshow-container section.boards .right-boards article.description ul li input#dims3:checked ~ p {
+  display: block;
+}
+
+header section.slideshow-container section.boards .right-boards article.description ul li input:checked + label {
   border-bottom: 2px solid #00b0ff;
 }
 
-header section.boards .right-boards article.description ul li label {
+header section.slideshow-container section.boards .right-boards article.description ul li label {
   display: block;
   font: bold 14px "RalewayRegular", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-header section.boards .right-boards article.description ul li p {
+header section.slideshow-container section.boards .right-boards article.description ul li p {
   position: absolute;
   display: none;
-  top: 32%;
+  top: 36%;
   left: 0;
   width: 397px;
   font: 16px "RalewayRegular", sans-serif;
 }
 
-header section.boards .right-boards article.price {
+header section.slideshow-container section.boards .right-boards article.price {
   display: block;
 }
 
-header section.boards .right-boards article.price span {
+header section.slideshow-container section.boards .right-boards article.price span {
   margin-right: 50px;
   font: bold 24px "RalewayRegular", sans-serif;
 }
 
-header section.boards .right-boards article.price button {
+header section.slideshow-container section.boards .right-boards article.price button {
   padding: 17px 31px;
   background: #00b0ff;
   text-transform: uppercase;
@@ -462,12 +619,20 @@ header section.boards .right-boards article.price button {
   cursor: pointer;
 }
 
-header section.boards .right-boards a.view {
+header section.slideshow-container section.boards .right-boards a.view {
   display: block;
   margin-top: 51px;
   text-decoration: underline;
   font: 16px "Montserrat-Regular", sans-serif;
   color: #00b0ff;
+}
+
+section.after-header p {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font: bold 13em "Montserrat-Bold", sans-serif;
+  color: rgba(247, 247, 247, 0.7);
 }
 
 @media screen and (max-width: 894px) {
