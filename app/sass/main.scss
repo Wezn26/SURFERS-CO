@@ -299,7 +299,7 @@ section.slideshow-container {
          top: 80px;
          left: 70px;
          display: none;
-         width: 345px;
+         width: 68%;
          height: 470px;
          background: url(../img/boards-img.png) no-repeat 0 0;
          &.img2 {background-position: -336px 0;}
@@ -326,7 +326,7 @@ section.slideshow-container {
     cursor: pointer;
   }
   article.description {
-    height: 220px;
+    height: 240px;
     ul {
       display: -webkit-flex;
       display: -moz-flex;
@@ -405,18 +405,12 @@ section.slideshow-container {
                  // HEADER END
 
           //AFTER HEADER BEGINNER
-section.after-header {
 
-  p {
-    display: block;
-    text-transform: uppercase;
-    text-align: center;
-    font: bold 13em $mb, sans-serif;
-    color: $abs;
-  }
-}
           //AFTER HEADER END
 // MEDIA SCREENS BEGINNER
+
+
+//MAX-WIDTH: 894 PX
 @media screen and (max-width: 894px) {
   header {
     padding: 0;
@@ -480,8 +474,190 @@ header nav.menu p {
  input#btn-menu:checked ~ nav.menu {
     margin: 0;
   }
-
+}
+//MIN-WIDTH: 548PX AND MAX-WIDTH: 1126PX
+@media screen and (min-width: 548px) and (max-width: 1126px) {
+header section.slideshow-container {
+  max-width: 500px;
+.prev {
+  right: 3%;
+}
 }
 
+ header section.slideshow-container section.boards {
+   max-width: 500px;
+   height: 1230px;
+ }
+ header section.slideshow-container section.boards .left-boards {
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   width: 100%;
+  ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
 
+  li {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    margin-right: 3px;
+  img {
+    top: 2%;
+    left: 2%;
+  }
+  }
+  }
+ }
+ header section.slideshow-container section.boards .right-boards {
+   width: 100%;
+   float: none;
+ }
+ }
+//MAX-WIDTH: 548PX
+ @media screen and (min-width: 398px) and (max-width: 548px) {
+ header section.slideshow-container {
+   max-width: 380px;
+  .prev, .next {
+    top: -3%;
+    right: 80%;
+  }
+  .prev {
+    right: 88%;
+  }
+  .numbertext {
+    top: -2%;
+    right: 50%;
+  }
+ }
+
+
+
+  header section.slideshow-container section.boards {
+    max-width: 380px;
+    height: 1200px;
+  }
+  header section.slideshow-container section.boards .left-boards {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+   ul {
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+
+   li {
+     display: -webkit-inline-flex;
+     display: -moz-inline-flex;
+     display: -ms-inline-flex;
+     display: -o-inline-flex;
+     display: inline-flex;
+     margin-right: 3px;
+   img {
+     top: 0;
+     left: 0;
+     width: 88%;
+   }
+   }
+   }
+  }
+  header section.slideshow-container section.boards .right-boards {
+    width: 90%;
+    float: none;
+    background: none;
+  article.description ul li {
+    margin-right: 10px;
+    p {
+    width: 300px;
+    }
+   }
+
+  }
+
+  }
+
+
+  //MAX-WIDTH: 398PX
+   @media screen and (max-width: 398px) {
+   header section.slideshow-container {
+     max-width: 380px;
+    .prev, .next {
+      top: -3%;
+      right: 76%;
+    }
+    .prev {
+      right: 88%;
+    }
+    .numbertext {
+      top: -2%;
+      right: 50%;
+    }
+   }
+
+
+
+    header section.slideshow-container section.boards {
+      max-width: 380px;
+      height: 1200px;
+    }
+    header section.slideshow-container section.boards .left-boards {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      width: 100%;
+     ul {
+       display: -webkit-flex;
+       display: -moz-flex;
+       display: -ms-flex;
+       display: -o-flex;
+       display: flex;
+
+     li {
+       display: -webkit-inline-flex;
+       display: -moz-inline-flex;
+       display: -ms-inline-flex;
+       display: -o-inline-flex;
+       display: inline-flex;
+       margin-right: 3px;
+     img {
+       top: 0;
+       left: 0;
+       width: 95%;
+     }
+     }
+     }
+    }
+    header section.slideshow-container section.boards .right-boards {
+      width: 90%;
+      float: none;
+      background: none;
+    article.description ul li {
+      margin-right: 10px;
+      p {
+        top: 40%;
+        width: 300px;
+      }
+     }
+    }
+    }
 // MEDIA SCREENS END
