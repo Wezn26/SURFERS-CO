@@ -627,6 +627,30 @@ header section.slideshow-container section.boards .right-boards a.view {
   color: #00b0ff;
 }
 
+header section.about-us {
+  display: block;
+  height: 150px;
+  margin-top: 180px;
+  text-align: center;
+}
+
+header section.about-us p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10vw;
+  color: rgba(247, 247, 247, 0.7);
+  letter-spacing: 44px;
+}
+
+section.img-about-us {
+  display: block;
+  margin-top: 17em;
+}
+
+section.img-about-us img {
+  max-width: 100%;
+}
+
 @media screen and (max-width: 894px) {
   header {
     padding: 0;
@@ -749,6 +773,13 @@ header section.slideshow-container section.boards .right-boards a.view {
     width: 100%;
     float: none;
   }
+  header section.about-us {
+    margin-top: 50px;
+    height: 50px;
+  }
+  section.img-about-us {
+    margin-top: 55em;
+  }
 }
 
 @media screen and (min-width: 398px) and (max-width: 548px) {
@@ -822,6 +853,12 @@ header section.slideshow-container section.boards .right-boards a.view {
   }
   header section.slideshow-container section.boards .right-boards article.description ul li p {
     width: 300px;
+  }
+  header section.about-us {
+    display: none;
+  }
+  section.img-about-us {
+    margin-top: 55em;
   }
 }
 
@@ -897,5 +934,11 @@ header section.slideshow-container section.boards .right-boards a.view {
   header section.slideshow-container section.boards .right-boards article.description ul li p {
     top: 40%;
     width: 300px;
+  }
+  header section.about-us {
+    display: none;
+  }
+  section.img-about-us {
+    display: none;
   }
 }
