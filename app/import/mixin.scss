@@ -1,0 +1,6 @@
+@mixin a {
+ display: block;
+ text-decoration: underline;
+ font: 16px $mr, sans-serif;
+ color: $nav;
+}

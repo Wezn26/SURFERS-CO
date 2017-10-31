@@ -433,7 +433,88 @@ img {
 
 //ABOUT-US-IMG-END
 
+//WE ARE BEGINNER
+section.we-are {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: 404px;
+  flex-wrap: wrap;
+ div.left-we-are  {
+   display: -webkit-inline-flex;
+   display: -moz-inline-flex;
+   display: -ms-inline-flex;
+   display: -o-inline-flex;
+   display: inline-flex;
+   justify-content: flex-end;
+   width: 48%;
+   margin-top: -300px;
+   background: $w;
+ }
+}
+
+div.descr-surf {
+  display: block;
+  width: 307px;
+  padding: 100px 60px 0  0;
+ h3 {
+   text-transform: uppercase;
+   font: 18px $mr, sans-serif;
+ }
+ span {
+  display: block;
+  margin: 0.5em 0 1em 6em;
+ }
+ p {
+   font: 12px/20px $plf;
+ }
+ a {
+   @include a;
+   margin-top: 70px;
+ }
+}
+
+div.video {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 51%;
+  a {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    max-width: 100%;
+    margin: -80px 0 0 70px;
+    overflow: hidden;
+    background: url(../img/surfer.jpg) no-repeat 50% 50%;
+  span {
+    display: inline-block;
+    width: 144px;
+    height: 144px;
+    background: url(../img/player.png) no-repeat 0 50%;
+    &:hover {background-position: -152px 0;}
+  }
+  }
+}
+
+
+
+//WE ARE END
+
               //MAIN END
+
 // MEDIA SCREENS BEGINNER
 
 
@@ -501,7 +582,13 @@ header nav.menu p {
  input#btn-menu:checked ~ nav.menu {
     margin: 0;
   }
+
+  div.video {
+    margin-top: 30em;
+  }
+
 }
+
 //MIN-WIDTH: 548PX AND MAX-WIDTH: 1126PX
 @media screen and (min-width: 548px) and (max-width: 1126px) {
 header section.slideshow-container {
@@ -554,9 +641,19 @@ header section.slideshow-container {
   height: 50px;
  }
  section.img-about-us {
-   margin-top: 55em;
+   margin-top: 60em;
  }
+  section.we-are div.left-we-are {
+    margin-top: 0;
+  }
+
+  div.video a {
+    margin: 0;
+  }
+
  }
+
+
 //MIN-WIDTH:398 AND MAX-WIDTH: 548PX
  @media screen and (min-width: 398px) and (max-width: 548px) {
  header section.slideshow-container {
@@ -629,8 +726,12 @@ header section.slideshow-container {
   }
 
   section.img-about-us {
-    margin-top: 55em;
+    margin-top: 60em;
   }
+  section.we-are div.left-we-are {
+    margin-top: 0;
+  }
+
 
   }
 
