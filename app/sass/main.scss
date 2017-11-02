@@ -435,6 +435,7 @@ img {
 
 //WE ARE BEGINNER
 section.we-are {
+  position: relative;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -532,7 +533,7 @@ div.video {
     display: block;
   }
   header nav.menu ul li {
-    margin-left: 0;
+    margin-right: 0;
     text-align: center;
   }
 
@@ -584,7 +585,7 @@ header nav.menu p {
   }
 
   div.video {
-    margin-top: 30em;
+    // margin-top: 30em;
   }
 
 }
@@ -729,7 +730,25 @@ header section.slideshow-container {
     margin-top: 60em;
   }
   section.we-are div.left-we-are {
+    width: 100%;
     margin-top: 0;
+  }
+
+  div.descr-surf {
+   margin-left: 30%;
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+
+  div.video {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  div.video a {
+    margin: 0;
   }
 
 
@@ -807,6 +826,32 @@ header section.slideshow-container {
     }
     section.img-about-us {
       display: none;
+    }
+
+    section.we-are {
+      margin-top: 70em;
+    }
+
+    section.we-are div.left-we-are {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    div.descr-surf {
+     margin-left: 10%;
+      width: 100%;
+      padding: 10px 0 0 0;
+    }
+
+    div.video {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      height: 100%;
+    }
+
+    div.video a {
+      margin: 0;
     }
     }
 // MEDIA SCREENS END
