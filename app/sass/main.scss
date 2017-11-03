@@ -65,6 +65,10 @@ float: left;
 float: right;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .clearfix::before,
 .clearfix::after {
 content: " ";
@@ -510,9 +514,83 @@ div.video {
   }
 }
 
-
-
 //WE ARE END
+
+//OUR TEAM BEGINNER
+section#slider {
+  width: 1064px;
+  height: 300px;
+}
+ul#polosa {
+  position: relative;
+  left: 0;
+  width: 2128px;
+ li {
+  //  display: inline-block;
+  position: relative;
+   width: 266px;
+   height: 283px;
+   padding-top: 35px;
+   background: $w;
+   float: left;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   text-align: center;
+   border-radius: 3px;
+   transition: background 0.5s ease;
+   &:hover {background: $nav;}
+   &:hover h3 {color: $w;}
+   &:nth-child(2n+1) {z-index: 0;}
+   &:nth-child(2n+3) {margin-left: -20px;}
+   &:nth-child(2n+2) {
+     margin: 40px 0 0 -20px;
+     z-index: 2;
+   }
+  div.image {
+// display: inline-block;
+  padding-bottom: 23px;
+  a {
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    background: url(../img/our-team.png) no-repeat 3% 25%;
+    border: 2px solid $w;
+    border-radius: 50%;
+  &.malia {background-position: -110px 0;}
+  &.ian {background-position: -220px 0;}
+  &.macy {background-position: -366px -12px;}
+  }
+  }
+
+  h3 {
+    @include team;
+  }
+  p.ig {
+    @include ig;
+  }
+  span.line {
+    display: inline-block;
+    width: 31px;
+    height: 8px;
+    margin: 12px 0;
+    background: url(../img/Rating.png) no-repeat 0 -16px;
+  }
+
+  p.loc {
+    @include ig;
+    span {
+      display: inline-block;
+      margin-right: 6px;
+      width: 14px;
+      height: 14px;
+      background: url(../img/Rating.png) no-repeat -35px -17px;
+    }
+  }
+ }
+}
+
+//OUR TEAM END
 
               //MAIN END
 

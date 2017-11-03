@@ -4,3 +4,14 @@
  font: 16px $mr, sans-serif;
  color: $nav;
 }
+
+@mixin team {
+  font: 18px $mr, sans-serif;
+  color: $nav;
+}
+
+@mixin ig {
+  font: 14px $rr, sans-serif;
+  color: $ig;
+  cursor: pointer;  
+}
