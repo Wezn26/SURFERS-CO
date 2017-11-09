@@ -178,7 +178,36 @@
   };
 })();
 
-//SLIDER BEGINNER
+
+//SLIDER OUR TEAM BEGINNER
+(function () {
+  document.getElementById('slider-left').onclick = sliderLeft;
+  document.getElementById('slider-right').onclick = sliderRight;
+  var left = 0;
+  var polosa = document.getElementById('polosa');
+
+  function sliderLeft(){
+  	left = left - 246;
+  	if (left < - 984) {
+  		left = 0;
+  	}
+  	polosa.style.left = left + 'px';
+  }
+
+  function sliderRight() {
+  	left = left + 246;
+  	if (left > 0) {
+  		left = - 984;
+  	}
+  	polosa.style.left = left + 'px';
+  }
+
+})();
+//SLIDER OUR TEAM END
+
+
+//SLIDER SURFERS BEGINNER
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -205,4 +234,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-//SLIDER END
+
+//SLIDER SURFERS END

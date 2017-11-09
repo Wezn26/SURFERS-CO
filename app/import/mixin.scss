@@ -13,5 +13,28 @@
 @mixin ig {
   font: 14px $rr, sans-serif;
   color: $ig;
-  cursor: pointer;  
+  cursor: pointer;
+}
+
+@mixin btn {
+  position: absolute;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 20px;
+  color: $ars;
+  border: none;
+  outline: none;
+  background: $w;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@mixin h3 {
+  text-transform: uppercase;
+  font: 18px $mr, sans-serif;
+}
+
+@mixin span {
+  display: block;
+  margin: 0.5em 0 1em 5em;
 }
