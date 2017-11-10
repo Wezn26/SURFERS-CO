@@ -38,3 +38,16 @@
   display: block;
   margin: 0.5em 0 1em 5em;
 }
+
+@mixin button {
+  padding: 17px 31px;
+  background: $nav;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $w;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+ &:hover {background: $yel;}
+}

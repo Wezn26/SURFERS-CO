@@ -386,13 +386,7 @@ section.slideshow-container {
     font: bold 24px $rr, sans-serif;
   }
   button {
-    padding: 17px 31px;
-    background: $nav;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: $w;
-    border: none;
-    cursor: pointer;
+    @include button;
   }
   }
 
@@ -617,10 +611,12 @@ button#slider-right:hover {
 
 //LATEST UPDATES BEGINNER
 div.center {
-  display: inline-block;
-  margin-left: 45%;
+  text-align: center;
 h3 {@include h3;}
-span{@include span;}
+span{
+  display: block;
+  margin-top: 18px;
+}
 }
 
 ul.posts {
@@ -630,21 +626,38 @@ ul.posts {
   display: -o-flex;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: 43px 0;
   li {
     width: 317px;
     height: 354px;
     margin-right: 5px;
   &:last-child {margin-right: 0;}
+  &:hover {
+    box-shadow: 8px 10px 50px rgba(0, 0, 0, 0.3);
+    color: $ars;
+  }
   a {
     display: block;
-    width: 317px;
+    max-width: 317px;
     height: 215px;
     background: url(../img/latest-updates.jpg) no-repeat 0 0;
   &.wave {background-position: -317px 0;}
   &.beach {background-position: -636px 0;}
   }
 
-  p {padding: 20px 20px;}
+  p {
+    padding: 20px 51px;
+    font: 16px $rr, sans-serif;
+  }
+  }
+}
+
+section.latest-updates {
+  button {
+    display: block;
+    margin: 0 auto;
+    @include button;
   }
 }
 //LATEST UPDATES END
