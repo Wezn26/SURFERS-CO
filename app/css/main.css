@@ -50,6 +50,10 @@ table {
   border-spacing: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 a, a:hover {
   text-decoration: none;
   color: #000;
@@ -1024,6 +1028,79 @@ section.latest-updates button {
 
 section.latest-updates button:hover {
   background: #f2d800;
+}
+
+section.widgets {
+  margin-top: 180px;
+}
+
+section.instagram img {
+  width: 600px;
+}
+
+ul.inst {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: -1em;
+  max-width: 630px;
+}
+
+ul.inst li {
+  display: block;
+}
+
+ul.inst li a {
+  display: block;
+  width: 300px;
+  height: 309px;
+  background: url(../img/instagram.png) no-repeat;
+}
+
+div.inst-follow {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 51%;
+}
+
+div.inst-follow a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  background: url(../img/social-icons.png) no-repeat -223px 0;
+}
+
+div.inst-follow h2, div.inst-follow p {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+div.inst-follow h2 {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font: bold 24px "RalewayRegular", sans-serif;
+  color: #00b0ff;
+}
+
+div.inst-follow p {
+  font: 16px "RalewayRegular", sans-serif;
 }
 
 @media screen and (min-width: 891px) and (max-width: 1162px) {

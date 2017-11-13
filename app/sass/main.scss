@@ -45,6 +45,10 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 a, a:hover {
 text-decoration: none;
 color: #000;
@@ -662,6 +666,65 @@ section.latest-updates {
 }
 //LATEST UPDATES END
 
+//WIDGETS BEGINNER
+section.widgets {
+  margin-top: 180px;
+}
+
+section.instagram {
+  // max-width: 630px;
+ img {width: 600px;}
+}
+
+ul.inst {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: -1em;
+  max-width: 630px;
+  li {
+    display: block;
+    a {
+      display: block;
+      width: 300px;
+      height: 309px;
+      background: url(../img/instagram.png) no-repeat;
+    }
+  }
+}
+
+div.inst-follow {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 51%;
+ a {
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   margin: 20px;
+   background: url(../img/social-icons.png) no-repeat -223px 0;
+ }
+h2, p {
+   align-self: center;
+ }
+ h2 {
+   margin-right: 20px;
+   text-transform: uppercase;
+   font: bold 24px $rr, sans-serif;
+   color: $nav;
+ }
+ p {
+   font: 16px $rr, sans-serif;
+ }
+}
+//WIDGETS END
               //MAIN END
 
 // MEDIA SCREENS BEGINNER
