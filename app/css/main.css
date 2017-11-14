@@ -155,18 +155,11 @@ header input#btn-menu {
 }
 
 header label.lbl-menu {
-  display: none;
+  border-bottom: 17px double #fff;
+  border-top: 6px solid #fff;
+  content: "";
+  height: 5px;
   width: 30px;
-  height: 30px;
-  padding: 5px 14px 13px 15px;
-  background: #00b0ff;
-  border: 3px solid #fff;
-}
-
-header label.lbl-menu span {
-  font-size: 30px;
-  color: #fff;
-  cursor: pointer;
 }
 
 header p.menu {
@@ -602,8 +595,9 @@ header section.slideshow-container section.boards .right-boards article.descript
 header section.slideshow-container section.boards .right-boards article.description ul li p {
   position: absolute;
   display: none;
-  top: 36%;
+  top: 38%;
   left: 0;
+  margin-top: 20px;
   width: 397px;
   font: 16px "RalewayRegular", sans-serif;
 }
@@ -644,16 +638,18 @@ header section.slideshow-container section.boards .right-boards a.view {
 }
 
 header section.about-us {
+  position: absolute;
+  bottom: -110%;
   display: block;
   height: 150px;
-  margin-top: 180px;
   text-align: center;
+  z-index: 0;
 }
 
 header section.about-us p {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 10vw;
+  font-size: 8vw;
   color: rgba(247, 247, 247, 0.7);
   letter-spacing: 44px;
 }
@@ -708,11 +704,15 @@ div.descr-surf {
 div.descr-surf h3 {
   text-transform: uppercase;
   font: 18px "Montserrat-Regular", sans-serif;
+  padding-bottom: 15px;
 }
 
 div.descr-surf span {
   display: block;
+  width: 13px;
+  height: 13px;
   margin: 0.5em 0 1em 5em;
+  background: url(../img/social-icons.png) no-repeat -256px 0;
 }
 
 div.descr-surf p {
@@ -949,11 +949,15 @@ div.center {
 div.center h3 {
   text-transform: uppercase;
   font: 18px "Montserrat-Regular", sans-serif;
+  padding-bottom: 15px;
 }
 
 div.center span {
   display: block;
-  margin-top: 18px;
+  width: 13px;
+  height: 13px;
+  margin: 0 auto;
+  background: url(../img/social-icons.png) no-repeat -256px 0;
 }
 
 ul.posts {
@@ -1156,13 +1160,17 @@ div.inst-follow p {
   }
   section.head {
     background: #00b0ff;
+    height: 40px;
+    padding-top: 15px;
   }
   header label.lbl-menu {
     display: block;
+    margin-left: 15px;
   }
   header nav.menu ul li {
     margin-right: 0;
     text-align: center;
+    padding: 5px;
   }
   header p.menu {
     display: block;
@@ -1377,6 +1385,7 @@ div.inst-follow p {
   div.video {
     position: absolute;
     top: 100%;
+    left: 0;
     width: 100%;
     height: 100%;
   }
@@ -1465,7 +1474,7 @@ div.inst-follow p {
     display: none;
   }
   section.we-are {
-    margin-top: 70em;
+    margin-top: 72em;
   }
   section.we-are div.left-we-are {
     width: 100%;
@@ -1479,6 +1488,7 @@ div.inst-follow p {
   div.video {
     position: absolute;
     top: 100%;
+    left: 0;
     width: 100%;
     height: 100%;
   }
