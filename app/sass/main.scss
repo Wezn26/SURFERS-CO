@@ -686,7 +686,7 @@ section.latest-updates {
 
 //WIDGETS BEGINNER
 section.widgets {
-  margin-top: 180px;
+  margin: 180px 0 5em 0;
 }
 
 section.instagram {
@@ -791,7 +791,7 @@ section.main-footer {
 
 .footer-left {
   position: absolute;
-  top: 300px;
+  top: 230px;
   left: 0;
   display: -webkit-inline-flex;
   display: -moz-inline-flex;
@@ -811,12 +811,66 @@ section.main-footer {
     background: $cop;
     border-radius: 50%;
   }
+
+}
+
+section.footer-right {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+}
+
+section.descr-footer ul li {
+  margin-bottom: 18px;
+  &:last-child {margin-bottom: 0;}
+}
+
+section.descr-footer ul li a {
+  font-family: $rr;
+  font-weight: bold;
+  color: $w;
+}
+
+section.descr-footer ul li span {
+  display: inline-block;
+  width: 19px;
+  height: 6px;
+  margin-right: 7px;
+  background: url(../img/social-icons.png) no-repeat -272px 0;
+}
+section.descr-footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin: 46px 0 0 48px;
+  ul.ul-left {
+    margin-right: 64px;
+    li {
+      a {
+
+      }
+    }
+  }
+
+  ul.ul-right {
+    li {
+      a {
+
+      }
+    }
+  }
+
+
 }
               //FOOTER END
 
 // MEDIA SCREENS BEGINNER
 
-             //SECTION OUR TEAM BEGINNER
+
 //MIN-WIDTH 891PX MAX-WIDTH 1162PX
 @media screen and (min-width: 891px) and (max-width: 1162px){
   section.our-team {margin-top: 5em;}
@@ -828,6 +882,15 @@ section.main-footer {
   section.team-bg {
     padding: 103px 0 186px 0;
   }
+
+
+    section.instagram {
+      margin-left: 20%;
+    }
+
+    section.facebook {
+      margin-left: 17em;
+    }
 }
 //MIN-WIDTH 630PX MAX-WIDTH 891PX
 @media screen and (min-width:630px) and (max-width: 891px) {
@@ -840,8 +903,11 @@ section.main-footer {
   section.team-bg {
     padding: 103px 0 186px 0;
   }
+
+
 }
 
+//MAX-WIDTH: 630PX
 @media screen and (max-width: 630px) {
   section.our-team {margin-top: 20em;}
   section#slider {
@@ -864,8 +930,36 @@ section.main-footer {
     right: 30%;
 
   }
+
+  section.instagram img {
+    width: 100%;
+  }
+
+  ul.inst {
+    width: 100%;
+    justify-content: center;
+  }
+
+  section.facebook {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  div.facebook-down {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.facebook-down iframe {
+    margin-left: 0;
+  }
+
 }
-                //SECTION OUR TEAM END
+
 
 
 //MAX-WIDTH: 894 PX
@@ -943,7 +1037,7 @@ header nav.menu p {
     // margin-top: 30em;
   }
 
-  // ul.inst {justify-content: center;}
+
 
 }
 
