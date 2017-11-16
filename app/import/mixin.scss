@@ -55,3 +55,9 @@
   transition: background 0.5s ease;
  &:hover {background: $yel;}
 }
+
+@mixin input {
+  outline: none;
+  border: none;
+  color: $w;
+}

@@ -1238,6 +1238,56 @@ section.descr-footer ul.ul-left {
   margin-right: 64px;
 }
 
+section.newsletter {
+  display: inline-block;
+  margin: 122px 0 0 64px;
+}
+
+section.newsletter h4 {
+  margin-bottom: 24px;
+  font: bold 16px "RalewayRegular", sans-serif;
+  color: #fff;
+}
+
+div.email {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+div.email span {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  margin-right: 5px;
+  background: url(../img/social-icons.png) no-repeat -295px 0;
+}
+
+div.email input[type="text"] {
+  outline: none;
+  border: none;
+  color: #fff;
+  background: transparent;
+}
+
+div.email input[type="submit"] {
+  padding: 4px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  background: #00b0ff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 549px) and (max-width: 1172px) {
+  section.newsletter {
+    margin: 60px 0 0 0;
+    float: right;
+  }
+}
+
 @media screen and (min-width: 891px) and (max-width: 1162px) {
   section.our-team {
     margin-top: 5em;
@@ -1319,6 +1369,12 @@ section.descr-footer ul.ul-left {
   div.facebook-down iframe {
     margin-left: 0;
   }
+  .footer-left {
+    top: 390px;
+  }
+  section.descr-footer {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 894px) {
@@ -1356,6 +1412,7 @@ section.descr-footer ul.ul-left {
   header nav.menu p {
     display: block;
     margin-right: 0;
+    padding-top: 14px;
     text-align: center;
   }
   header nav.menu ul {
@@ -1670,5 +1727,8 @@ section.descr-footer ul.ul-left {
   }
   div.inst-follow p {
     margin: 0 auto;
+  }
+  section.newsletter {
+    margin: 60px 0 0 0;
   }
 }
