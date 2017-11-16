@@ -88,9 +88,8 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
 //BUILD
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
   var buildCss = gulp.src([
-    'app/css/main.css',
-    'app/css/libs.min.css'
-  ])
+    'app/css/main.css'
+   ])
   .pipe(gulp.dest('dist/css'));
 
   var buildFonts = gulp.src('app/fonts/**/*')
